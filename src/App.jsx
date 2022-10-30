@@ -1,4 +1,5 @@
 import Advice from './advice/Advice'
+import FilterData from './filter/FilterData'
 import NavMenu from './navMenu/NavMenu'
 import Quiz from './quiz/Quiz'
 import Quiz2 from './quiz/Quiz2'
@@ -14,7 +15,8 @@ function App() {
         {/* <Quiz /> */}
         {/* <Temp /> */}
         {/* <Advice /> */}
-        <Weather />
+        {/* <Weather /> */}
+<FilterData/>
     </div>
   )
 }
