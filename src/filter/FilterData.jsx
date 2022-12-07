@@ -13,7 +13,7 @@ const FilterData = () => {
         )
     }
     return (
-        <>
+        <div >
             <input type="text" onChange={(e)=>setQuary(e.target.value)} placeholder='Search....' style={{margin: '5px',padding:'5px',borderRadius:'25px'}}/>
             {
                 search(Users).map(user =>
@@ -27,7 +27,7 @@ const FilterData = () => {
                     
                     )
             }
-        </>
+        </div>
     );
 };
 

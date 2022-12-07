@@ -18,14 +18,16 @@ body {
     min-height: 100vh;
   } */
   
-  .app {
-    background-color: #252d4a;
+  .quizapp {
+    background-color: #166b95;
+    color: white;
     width: 450px;
+    margin: auto auto;
     min-height: 200px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-evenly;
   }
@@ -76,7 +78,7 @@ body {
     font-size: 16px;
     color: #030303;
     background-color: #252d4a;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     display: flex;
     padding: 5px;
     justify-content: flex-start;

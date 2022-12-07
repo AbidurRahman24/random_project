@@ -1,14 +1,4 @@
-/* body {
-    font-family: sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-  } */
-  .app-container {
+.app-container {
     height: 400px;
     width: 300px;
     background: #2b5870;
@@ -37,12 +27,13 @@
     transition: background 0.5s;
   }
   
-  button {
+  .temp-button {
     border-radius: 100px;
     height: 80px;
     width: 80px;
     font-size: 32px;
-    color: #ffffff;
+    text-align: center;
+    color: #ffffff !important;
     background: rgb(105, 104, 104);
     border: 2px #ffffff solid;
   }

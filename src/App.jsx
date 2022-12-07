@@ -12,21 +12,25 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Navbar from './navbar/Navbar'
 function App() {
 
   return (
     <div >
       <BrowserRouter>
+      <Navbar />
     <Routes>
-      <Route path="/" element={<Sidebar />}>
-      </Route>
+      <Route path="/sidebar" element={<Sidebar />}/>
+      <Route path="/quiz" element={<Quiz />}/>
+      <Route path="/temp" element={<Temp />}/>
+      <Route path="/advice" element={<Advice />}/>
+      <Route path="/weather" element={<Weather />}/>
+      <Route path="/filterData" element={<FilterData />}/>
     </Routes>
   </BrowserRouter>,
+      {/* <Route path="/" element={<Sidebar />}> */}
+      {/* </Route> */}
     {/* <NavMenu /> */}
-        {/* <Quiz /> */}
-        {/* <Temp /> */}
-        {/* <Advice /> */}
-        {/* <Weather /> */}
 {/* <FilterData/> */}
     {/* <Sidebar /> */}
     </div>
