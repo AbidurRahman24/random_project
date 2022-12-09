@@ -13,6 +13,7 @@ import {
   Route,
 } from "react-router-dom";
 import Navbar from './navbar/Navbar'
+import Form from './form/Form'
 function App() {
 
   return (
@@ -20,12 +21,14 @@ function App() {
       <BrowserRouter>
       <Navbar />
     <Routes>
+      <Route path="/" element={<Quiz />}/>
       <Route path="/sidebar" element={<Sidebar />}/>
       <Route path="/quiz" element={<Quiz />}/>
       <Route path="/temp" element={<Temp />}/>
       <Route path="/advice" element={<Advice />}/>
       <Route path="/weather" element={<Weather />}/>
       <Route path="/filterData" element={<FilterData />}/>
+      <Route path="/form" element={<Form />}/>
     </Routes>
   </BrowserRouter>,
       {/* <Route path="/" element={<Sidebar />}> */}

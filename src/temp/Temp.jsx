@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Temp.css'
 const Temp = () => {
-    const [temperatureValue, setTemperatureValue] = useState(10)
+    const [temperatureValue, setTemperatureValue] = useState(13)
     const [temperatureColor, setTemperatureColor] = useState("cold");
     const increaseTemperature = () =>{
         if(temperatureValue >= 30) return
         const newTemperature = temperatureValue + 1
         setTemperatureValue(newTemperature)
-        if (newTemperature >= 20){
+        if (newTemperature >= 15){
             setTemperatureColor('neutral')
         }
         if (newTemperature >= 25){

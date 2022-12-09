@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <>
          <ul className="menu menu-vertical lg:menu-horizontal bg-base-100 rounded-box">
-  <li><a href='/temp'>Temp</a></li>
-  <li><a href='/quiz'>Quiz</a></li>
-  <li><a href='/advice'>Advice</a></li>
-  <li><a href='/weather'>Weather</a></li>
-  <li><a href='/sidebar'>Sidebar</a></li>
-  <li><a href='/filterData'>FilterData</a></li>
+  <li><Link to={'/temp'}>Temp</Link></li>
+  <li><Link to={'/quiz'}>Quiz</Link></li>
+  <li><Link to={'/advice'}>Advice</Link></li>
+  <li><Link to={'/weather'}>Weather</Link></li>
+  <li><Link to={'/sidebar'}>Sidebar</Link></li>
+  <li><Link to={'/filterData'}>FilterData</Link></li>
+  <li><Link to={'/form'}>Form</Link></li>
 </ul>   
         </>
     );
